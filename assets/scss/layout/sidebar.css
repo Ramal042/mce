@@ -1,0 +1,14 @@
+aside nav {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 10px 20px;
+}
+aside nav menu {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+aside nav menu li:hover {
+  background-color: black;
+}/*# sourceMappingURL=sidebar.css.map */

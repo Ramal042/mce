@@ -1,0 +1,61 @@
+%card-style {
+  border: 1px solid $primary-text-color;
+  border-radius: $br-lg;
+  //   overflow: hidden;
+  cursor: pointer;
+}
+
+.card-error {
+  background-color: red;
+  color: white;
+}
+
+.card {
+  @include flex(column, flex-start, flex-start, 8px);
+  @extend %card-style;
+
+  img {
+    border-top-left-radius: $br-lg;
+    border-top-right-radius: $br-lg;
+  }
+
+  & &--content {
+    padding: 10px;
+
+    & p:first-child {
+      color: $accent-color-dark;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    & p:last-child {
+      color: $secondary-color;
+      cursor: pointer;
+
+      &:hover {
+        &::after {
+          width: 100%;
+        }
+      }
+
+      &::after {
+        @include animateUnderline(150ms, $secondary-color);
+      }
+    }
+
+    @include flex(column, flex-start, flex-start, 4px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    margin-inline: auto;
+    height: fit-content;
+    width: 320px;
+    align-items: stretch;
+
+    & a img {
+      width: 318px;
+    }
+  }
+}

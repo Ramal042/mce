@@ -1,0 +1,47 @@
+#header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px;
+  background-color: $accent-color;
+  align-items: center;
+
+  h3 {
+    font-size: 26px;
+    color: $primary-color;
+  }
+
+  & .menu-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #header-container {
+    padding: 10px 20px;
+    h3 {
+      font-size: 16px;
+    }
+
+    button {
+      display: none;
+    }
+
+    & .menu-btn {
+      display: block;
+      @include flex(row, center, center, 0);
+      cursor: pointer;
+      padding: 4px;
+      border-radius: $br-sm;
+      transition: all 150ms ease-in-out;
+
+      &:hover {
+        background-color: $accent-color-dark;
+      }
+
+      & img {
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+}

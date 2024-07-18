@@ -1,0 +1,8 @@
+#header-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 80px;
+}
+#header-container h3 {
+  font-size: 26px;
+}/*# sourceMappingURL=header.css.map */

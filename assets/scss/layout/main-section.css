@@ -1,0 +1,6 @@
+section#main-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}/*# sourceMappingURL=main-section.css.map */

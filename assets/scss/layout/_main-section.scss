@@ -1,0 +1,20 @@
+section#main-section {
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 24px;
+  height: auto;
+  row-gap: 16px;
+}
+
+@media screen and (max-width: 480px) {
+  section#main-section {
+    // margin-inline: auto;
+    width: 100%;
+    grid-template-columns: 1fr;
+    row-gap: 24px;
+  }
+}
+
+// max-width - desktop first design
+// min-width - mobile first design

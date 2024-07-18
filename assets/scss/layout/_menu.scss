@@ -1,0 +1,35 @@
+nav.mobile-menu {
+  position: absolute;
+  background-color: $primary-background-color;
+
+  transition: all 150ms ease-in-out;
+
+  transform: translateX(100%);
+
+  width: 100vw;
+  height: 100vh;
+  @include flex(column, center, center, 24px);
+
+  color: $accent-color-dark;
+
+  menu ~ h2 {
+    color: $accent-color-dark;
+
+    &::after {
+      @include animateUnderline(150ms, $accent-color-dark);
+    }
+
+    &:hover {
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+
+  & .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+  }
+}

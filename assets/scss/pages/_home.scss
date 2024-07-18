@@ -1,0 +1,10 @@
+main {
+  display: flex;
+  height: calc(100vh - 120px);
+}
+
+// npm init -y
+// "scss:build": "sass ./assets/scss/style.scss:./assets/scss/style.css",
+// "scss:watch": "sass --watch ./assets/scss/style.scss:./assets/scss/style.css"
+// npm install -g sass --save-dev
+// npm run scss:watch

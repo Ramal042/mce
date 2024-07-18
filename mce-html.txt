@@ -1,0 +1,13 @@
+<!DOCTYPE html />
+<html>
+  <head>
+    ...
+    <meta />  --> SEO, viewport, charset
+    <link />  --> css, favicon
+    <title></title>  --> tab name
+  </head>
+  <body>
+    ...
+	a (anchor), button, header, nav, main, div, h1-h6, img, p, b, em, i, section, hr, br, u, del, strong, ul, ol, li, span, mark, table, th, thead, td, tbody, tfooter, marquee, menu, lable, input, form, legend, summary, details, 
+  </body>
+</html>
